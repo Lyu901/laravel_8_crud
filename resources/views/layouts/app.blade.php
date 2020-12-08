@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>App Name - @yield('title')</title>
+    <title>Lyu - @yield('title')</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
         rel="stylesheet">
@@ -20,13 +20,17 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: #9C27B0;
+            background-color: #3B5663;
             color: white;
             text-align: center;
+            margin-top: 30px;
+            padding: 30px;
         }
+        .footer p{margin-bottom:0px;}
         body {
-            background-color:  #EDF7EF
+            background-color:  #EFF6FA;
         }
+        .row{margin-top:40px;}
 
     </style>
 
@@ -42,10 +46,9 @@
     </div>
     <div class="text-center footer">
 
-        <h4>The writer needs a job</h4>
-        <h4>+234 806 605 6233</h4>
-        <h4>kingsconsult001@gmail.com</h4>
-        <h4>Github: www.github.com/kingsconsult</h4>
+        <p>+886 906 821 468</p>
+        <p>wangyanlyu@gmail.com</p>
+        <p>Github: www.github.com/Lyu901</p>
 
     </div>
 </body>
