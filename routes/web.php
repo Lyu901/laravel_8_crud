@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,6 @@ Route::get('/', function () {
 
 
 Route::resource('projects', ProjectController::class);
-
+Route::resource('books', BookController::class);
 // Route::resource('projects', 'ProjectController');
 

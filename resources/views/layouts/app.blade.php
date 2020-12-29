@@ -3,16 +3,11 @@
 <head>
     <title>Lyu - @yield('title')</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
-    </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/789e0a79b5.js" crossorigin="anonymous"></script>
 
     <style>
         .footer {
@@ -46,7 +41,7 @@
     </div>
     <div class="text-center footer">
 
-        <p>+886 906 821 468</p>
+        <p>1107211065 王晏綠</p>
         <p>wangyanlyu@gmail.com</p>
         <p>Github: www.github.com/Lyu901</p>
 

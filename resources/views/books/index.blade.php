@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title', 'ProjectManager')
+@section('title', 'BookManager')
 @section('content')
     <div class="row">
         <div class="col-lg-10">
-            <h2>Laravel 8 CRUD Practice Project</h2>
+            <h2>Laravel 8 CRUD Book</h2>
         </div>
         <div class="col-lg-2">
-            <a class="btn btn-success" href="{{ route('projects.create') }}" title="Create a project"> <i class="fas fa-plus-circle"></i></a>
+            <a class="btn btn-success" href="{{ route('books.create') }}" title="Create a book"> <i class="fas fa-plus-circle"></i></a>
         </div>
     </div>
     
@@ -20,29 +20,29 @@
     <table class="table table-bordered table-responsive-lg">
         <tr>
             <th>No</th>
-            <th>Name</th>
-            <th>Introduction</th>
-            <th>Location</th>
-            <th>Cost</th>
-            <th>Date Created</th>
+            <th>BookName</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>PubDate</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($projects as $project)
+        @foreach ($books as $book)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $project->name }}</td>
-                <td>{{ $project->introduction }}</td>
-                <td>{{ $project->location }}</td>
-                <td>{{ $project->cost }}</td>
-                <td>{{ date_format($project->created_at, 'jS M Y') }}</td>
+                <td>{{ $book->bookname }}</td>
+                <td>{{ $book->author }}</td>
+                <td>{{ $book->publisher }}</td>
+                <td>{{ $book->price }}</td>
+                <td>{{ date_format($book->created_at, 'jS M Y') }}</td>
                 <td>
-                    <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
+                    <form action="{{ route('books.destroy', $book->id) }}" method="POST">
 
-                        <a href="{{ route('projects.show', $project->id) }}" title="show">
+                        <a href="{{ route('books.show', $book->id) }}" title="show">
                             <i class="fas fa-eye text-success  fa-lg"></i>
                         </a>
 
-                        <a href="{{ route('projects.edit', $project->id) }}">
+                        <a href="{{ route('books.edit', $book->id) }}">
                             <i class="fas fa-edit  fa-lg"></i>
 
                         </a>
@@ -60,6 +60,6 @@
         @endforeach
     </table>
 
-    {!! $projects->links() !!}
+    {!! $books->links() !!}
 
 @endsection
